@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="/assets/fontawesome/js/all.min.js" />
+    <script src="/src/script.js" defer></script>
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <main class="bg-zamella-primary">
+      <section class="relative">
+        <div class="onboarding-header">
+          <img
+            src="/assets/images/zamella-logo-variant.svg"
+            alt="zamella-logo"
+            class="w-1/3" />
+          <h1 class="onboarding-header--heading self-start">Sign Up</h1>
+        </div>
+        <div class="onboarding-container">
+          <div>
+            <div>
+              <h1 class="heading-1">Create an account</h1>
+              <h2 class="subheading">Never be home stranded anymore!</h2>
+            </div>
+            <div
+              class="flex items-center justify-center flex-col text-center mt-10 gap-8">
+              <div>
+                <h1 class="heading-1 text-zamella-grey-text">Take a Selfie</h1>
+                <h2 class="link active">Facial Identification is successful</h2>
+              </div>
+              <div
+                class="w-52 h-52 border-4 border-zamella-primary rounded-full flex items-center justify-center">
+                <span
+                  class="fa fa-user text-[7rem] text-zamella-grey-200"></span>
+              </div>
+              <button class="zamella-btn--primaryFull" type="submit" disabled>
+                Create Account
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="overlay z-10 bg-opacity-80 bg-[#D9D9D9] h-full w-full inset-0 absolute"></div>
+        <div
+          class="success-modal rounded-lg absolute inset-x-10 inset-y-40 w-10/12 h-80 bg-white z-20 flex items-center justify-center">
+          <div class="success-modal--container mobilesm:p-10 p-5">
+            <h2 class="heading-2">
+              Your account has been created successfully
+            </h2>
+            <div
+              class="success-modal--icon p-2 bg-[#01A6FB33] rounded-full h-20 w-20 flex items-center justify-center animate-pulse">
+              <span
+                class="bg-[#01A6FB66] h-full w-full rounded-full flex items-center justify-center p-2">
+                <span
+                  class="bg-zamella-primary h-full w-full rounded-full flex items-center justify-center p-4">
+                  <span
+                    class="fa fa-check text-zamella-white text-[2rem]"></span>
+                </span>
+              </span>
+            </div>
+            <a href="#" class="zamella-btn--primaryFull" id="dashboard-btn">
+              Continue to Dashboard
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

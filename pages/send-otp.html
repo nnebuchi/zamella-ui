@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="/assets/fontawesome/js/all.min.js" />
+    <script src="/src/script.js" defer></script>
+    <title>Password Reset || Send OTP</title>
+  </head>
+  <body>
+    <main class="bg-zamella-primary">
+      <section class="relative">
+        <div class="onboarding-header">
+          <img
+            src="/assets/images/zamella-logo-variant.svg"
+            alt="zamella-logo"
+            class="w-1/3" />
+          <h1 class="onboarding-header--heading self-start">Reset Password</h1>
+        </div>
+        <div class="onboarding-container">
+          <div>
+            <div>
+              <h1 class="heading-1">Enter phone number</h1>
+              <h2 class="subheading">
+                Please enter the phone number associated with this account.
+              </h2>
+            </div>
+            <form action="" class="my-5">
+              <div class="zamella-input--container">
+                <span class="zamella-input--icon"
+                  ><i class="fa fa-phone"></i
+                ></span>
+                <input
+                  type="tel"
+                  placeholder="Phone"
+                  name="phone"
+                  value=""
+                  class="zamella-input" />
+              </div>
+            </form>
+            <div class="flex flex-col justify-center items-end gap-3">
+              <span class="link active"> </span>
+              <button class="zamella-btn--primary" type="submit">
+                Next <span class="fa fa-long-arrow-right mt-1"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="overlay z-10 bg-opacity-80 bg-[#D9D9D9] h-full w-full inset-0 absolute"></div>
+        <div
+          class="success-modal rounded-lg absolute inset-x-10 inset-y-40 w-10/12 h-80 bg-white z-20 flex items-center justify-center">
+          <div class="success-modal--container mobilesm:p-10 p-5">
+            <h2 class="heading-2 text-center text-zamella-primary">OTP</h2>
+            <p class="body text-start">
+              Zamella is about to send OTP to this phone number;
+              <span class="font-bold">09024576984</span>
+            </p>
+            <div class="flex items-center justify-between w-full gap-3">
+              <button
+                href="#"
+                class="zamella-btn--primaryFull bg-transparent ring-1 ring-zamella-primary text-zamella-primary hover:bg-transparent"
+                id="dashboard-btn">
+                Don't Send
+              </button>
+              <button
+                href="#"
+                class="zamella-btn--primaryFull"
+                id="dashboard-btn">
+                Send OTP
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

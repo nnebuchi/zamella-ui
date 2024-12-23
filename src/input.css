@@ -1,0 +1,143 @@
+:root {
+  --zamella-primary: #01a6fb;
+  --zamella-primary--200: #0874ab;
+  --zamella-secondary-200: #ff8732;
+  --zamella-secondary-100: #fff2e933;
+  --zamella-secondary-outline: #ff873233;
+  --zamella-accent: #fdefb2;
+  --zamella-black-200: #26292b;
+  --zamella-black-100: #1e1e1e;
+  --zamella-grey-200: #b6b3b3;
+  --zamella-grey-100: #26292bbf;
+  --zamella-grey-50: #f1f0f0;
+  --zamella-grey-25: #b6b3b3;
+  --zamella-grey-text: #26292b80;
+  --zamella-white: #ffffff;
+  --zamella-error-200: #bc0202;
+  --zamella-error-100: #e30404;
+}
+@tailwind base;
+
+@layer base {
+  @font-face {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/assets/fonts/Proxima-Nova/ProximaNova-Regular.otf") format("otf");
+  }
+  @font-face {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("/assets/fonts/Proxima Nova/ProximaNovaSemibold.otf") format("otf");
+  }
+  @font-face {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("/assets/fonts/Proxima Nova/ProximaNovaBold.otf") format("otf");
+  }
+  @font-face {
+    font-family: "Gotham";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/assets/fonts/Gotham-Font/GothamMedium.ttf") format("ttf");
+  }
+  @font-face {
+    font-family: "Gotham";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("/assets/fonts/Gotham-Font/GothamBold.ttf") format("ttf");
+  }
+  @font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/assets/fonts/Manrope/static/Manrope-Regular.ttf") format("ttf");
+  }
+  @font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("/assets/fonts/Manrope/static/Manrope-Bold.ttf") format("ttf");
+  }
+}
+@tailwind components;
+.heading-1 {
+  @apply text-3xl text-zamella-black-100 font-proxima font-semibold;
+}
+
+.heading-2 {
+  @apply text-2xl text-zamella-black-100 font-proxima font-bold;
+}
+.subheading {
+  @apply text-sm text-zamella-grey-100 font-manrope font-normal;
+}
+.body {
+  @apply text-base text-zamella-grey-100 font-manrope font-normal;
+}
+.body-sm {
+  @apply text-zamella-grey-100 font-manrope font-normal text-[0.6875rem];
+}
+.zamella-btn--primary {
+  @apply text-2xl text-zamella-white mobilesm:w-4/12 w-6/12 h-[4rem] text-center p-2 bg-zamella-primary rounded-sm flex items-center justify-center gap-3 hover:bg-zamella-primary--200;
+}
+.zamella-btn--primaryFull {
+  @apply text-2xl text-zamella-white mobilesm:w-full w-full h-[4rem] text-center p-2 bg-zamella-primary rounded-sm flex items-center justify-center gap-3 hover:bg-zamella-primary--200;
+}
+.onboarding-header {
+  @apply bg-blend-overlay h-[170px] bg-[url('/assets/images/transp-city.png')] bg-cover bg-bottom bg-no-repeat flex-col flex justify-between items-center mobilesm:mx-10 mx-5 py-5;
+}
+.onboarding-header--heading {
+  @apply text-3xl text-zamella-white font-proxima font-normal capitalize;
+}
+.onboarding-container {
+  @apply bg-zamella-white rounded-t-lg min-h-[400px] mobilesm:px-10 px-5 py-6;
+}
+.zamella-input--container {
+  @apply relative mb-5;
+}
+
+.zamella-input--icon {
+  @apply absolute inset-x-5 inset-y-4 text-zamella-grey-25 w-5 h-5 text-lg;
+}
+.zamella-input--iconRight {
+  @apply absolute inset-x-[22rem] inset-y-4 text-zamella-grey-100 w-5 h-5 text-lg;
+}
+.zamella-input {
+  @apply bg-zamella-grey-50 rounded-sm h-[4rem] w-full ps-16  flex items-center justify-center text-xl text-zamella-grey-100 font-proxima placeholder:text-xl placeholder:text-zamella-grey-100 placeholder:font-proxima placeholder:opacity-90 outline-none focus:ring-1 focus:ring-zamella-grey-100;
+}
+.link {
+  @apply text-base text-zamella-secondary-200 font-manrope font-normal;
+}
+
+.link.active {
+  @apply text-zamella-primary;
+}
+
+.success-modal--container {
+  @apply flex flex-col items-center justify-center gap-8 text-center;
+}
+
+@tailwind utilities;
+
+.onboarding-header {
+  /* background-image: url("/assets/images/transp-city.png"); */
+  /* background-color: #0874ab; */
+}
+
+.success-modal {
+  background-image: linear-gradient(
+    180deg,
+    #01a8fb25 10%,
+    var(--zamella-white) 40%
+  );
+  box-shadow: 0 0 8px 3px var(--zamella-grey-25);
+}
