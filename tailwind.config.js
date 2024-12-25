@@ -16,7 +16,9 @@ module.exports = {
     "./pages/request.html",
     "./pages/search-result.html",
     "./pages/search-result-empty.html",
-    "./pages/chat .html",
+    "./pages/chat.html",
+    "./pages/profile.html",
+    "./pages/share.html",
     "./src/script.js",
   ],
   theme: {
