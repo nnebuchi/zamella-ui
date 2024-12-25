@@ -10,6 +10,13 @@ module.exports = {
     "./pages/new-password.html",
     "./pages/home-feed.html",
     "./pages/selfie-upload-successful.html",
+    "./pages/post-house.html",
+    "./pages/upload-house-media.html",
+    "./pages/post-review.html",
+    "./pages/request.html",
+    "./pages/search-result.html",
+    "./pages/search-result-empty.html",
+    "./pages/chat .html",
     "./src/script.js",
   ],
   theme: {
@@ -50,7 +57,6 @@ module.exports = {
       },
       fontFamily: {
         proxima: ["Proxima Nova", "sans-serif"],
-        gotham: ["Gotham", "serif"],
         manrope: ["Manrope", "serif"],
       },
       fontSize: {
