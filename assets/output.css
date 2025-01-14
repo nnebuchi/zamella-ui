@@ -962,6 +962,11 @@ video {
   bottom: 10rem;
 }
 
+.inset-x-8 {
+  left: 2rem;
+  right: 2rem;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -1003,6 +1008,11 @@ video {
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
+}
+
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
 }
 
 .-mt-20 {
@@ -1217,6 +1227,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-11\/12 {
+  width: 91.666667%;
 }
 
 @keyframes pulse {
@@ -1812,8 +1826,51 @@ video {
     right: 17rem;
   }
 
+  .mobilexxs\:inset-x-6 {
+    left: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .mobilexxs\:inset-x-7 {
+    left: 1.75rem;
+    right: 1.75rem;
+  }
+
+  .mobilexxs\:inset-x-5 {
+    left: 1.25rem;
+    right: 1.25rem;
+  }
+
+  .mobilexxs\:inset-x-0 {
+    left: 0px;
+    right: 0px;
+  }
+
+  .mobilexxs\:inset-x-1 {
+    left: 0.25rem;
+    right: 0.25rem;
+  }
+
+  .mobilexxs\:inset-x-2 {
+    left: 0.5rem;
+    right: 0.5rem;
+  }
+
+  .mobilexxs\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .mobilexxs\:w-80 {
     width: 20rem;
+  }
+
+  .mobilexxs\:w-10\/12 {
+    width: 83.333333%;
+  }
+
+  .mobilexxs\:flex-row {
+    flex-direction: row;
   }
 }
 
@@ -1828,12 +1885,21 @@ video {
     right: 2rem;
   }
 
+  .mobilexs\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .mobilexs\:w-10\/12 {
     width: 83.333333%;
   }
 
   .mobilexs\:w-80 {
     width: 20rem;
+  }
+
+  .mobilexs\:flex-row {
+    flex-direction: row;
   }
 }
 
