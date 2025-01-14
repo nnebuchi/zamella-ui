@@ -96,7 +96,7 @@
   @apply absolute inset-x-5 inset-y-4 text-zamella-grey-25 w-5 h-5 text-lg;
 }
 .zamella-input--iconRight {
-  @apply absolute inset-x-[22rem] inset-y-4 text-zamella-grey-100 w-5 h-5 text-lg;
+  @apply absolute mobilesm:inset-x-[22rem]  mobilexs:inset-x-[18rem] mobilexxs:inset-x-[16rem] inset-x-[15rem] inset-y-4 text-zamella-grey-100 w-5 h-5 text-lg;
 }
 .zamella-input {
   @apply bg-zamella-grey-50 rounded-sm h-[4rem] w-full ps-16 pe-10  flex items-center justify-center text-xl text-zamella-grey-100 font-proxima placeholder:mobilexs:text-xl placeholder:text-sm placeholder:text-zamella-grey-100 placeholder:font-proxima placeholder:opacity-90 outline-none focus:ring-1 focus:ring-zamella-grey-100;
