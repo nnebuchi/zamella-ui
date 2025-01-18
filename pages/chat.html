@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="/assets/fontawesome/js/all.min.js" />
+    <script src="/src/script.js" defer></script>
+    <title>Home || Feed</title>
+  </head>
+  <body class="bg-zamella-white">
+    <header
+      class="border-b-[1.5px] border-zamella-grey-200 fixed z-50 w-full h-36 flex items-center justify-center bg-zamella-white">
+      <div
+        class="flex flex-col justify-between py-4 items-center h-full mobilesm:px-5 px-5 w-full">
+        <img
+          src="/assets/images/zamella-logo.svg"
+          alt="zamella-logo"
+          class="w-20 self-start" />
+        <div class="flex items-center justify-between w-full">
+          <div
+            class="w-14 h-14 rounded-sm bg-[#01A6FB26] flex items-center justify-center">
+            <span class="fa fa-arrow-left-long text-zamella-black-200"></span>
+          </div>
+          <div class="flex justify-center items-center w-full">
+            <h1 class="heading-1">Your Chat</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="pt-40">
+      <h1 class="text-center body pb-3">Today</h1>
+      <section class="px-5 min-h-80 h-1vh max-h-1vh overflow-scroll-y pb-28">
+        <div
+          class="flex justify-between gap-4 w-full max-h-1vh min-h-40 flex-wrap">
+          <div class="flex items-start justify-start w-full flex-col gap-1">
+            <span
+              class="p-3 w-fit h-12 text-start bg-[#E6F6FF80] ring-1 body font-normal ring-[#01A6FB40] flex items-center rounded-t-sm rounded-bl-sm"
+              >Hello Anthony</span
+            >
+            <span class="body-sm self-start">10:12 am </span>
+          </div>
+          <div class="flex items-end justify-end w-full flex-col">
+            <span
+              class="p-3 w-fit h-12 text-start bg-zamella-primary ring-1 ring-[#01A6FB40 body font-normal ] text-zamella-white flex items-center rounded-b-sm rounded-tr-sm"
+              >Hello Anthony</span
+            >
+            <span class="body-sm self-end flex items-center gap-2"
+              >10:12 am
+              <img src="/assets/images/check-double.svg" class="w-5" alt=""
+            /></span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="fixed bottom-0 z-30 h-20 shadow-2xl shadow-black bg-zamella-white w-full py-3 px-5 flex items-center justify-center">
+      <div class="zamella-input--container w-full mb-0">
+        <span class="zamella-input--icon">
+          <img src="/assets/images/attach.svg" alt="" class="w-20" />
+        </span>
+        <input
+          type="text"
+          class="zamella-input h-[3.5rem] ring-1 ring-zamella-grey-200 ps-12"
+          placeholder="Tap here to start chatting. . ." />
+        <span
+          class="zamella-input--iconRight mobilesm:inset-x-[25rem] mobilexxs:inset-x-[17rem] inset-x-[15rem]"
+          ><i class="fa fa-paper-plane text-zamella-primary text-2xl"></i
+        ></span>
+      </div>
+    </footer>
+  </body>
+</html>

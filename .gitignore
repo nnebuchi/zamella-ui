@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 *.node_modules
+=======
+/node_modules
+>>>>>>> f6ec6e1148b46b720cb715a901a778874d529bb9

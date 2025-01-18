@@ -14,7 +14,7 @@
     <script src="/src/script.js" defer></script>
     <title>Home || Feed</title>
   </head>
-  <body class="bg-zamella-white">
+  <body class="bg-zamella-white relative">
     <header
       class="border-b-[1.5px] border-zamella-grey-200 fixed z-50 w-full h-40 flex items-center justify-center bg-zamella-white">
       <div
@@ -222,6 +222,77 @@
                   class="subheading font-semibold font-proxima text-zamella-grey-300">
                   Share
                 </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- modal -->
+          <div
+            class="overlay z-50 bg-opacity-80 bg-[#D9D9D9] h-full w-full inset-0 absolute"></div>
+          <div
+            class="rounded-lg fixed mobilesm:inset-x-10 mobilexs:inset-x-8 mobilexxs:inset-x-3 inset-x-0 inset-y-36 mobilexs:w-10/12 mobilexxs:w-80 w-full h-fit bg-white z-50 flex items-center justify-center post-modal">
+            <div
+              class="flex-col flex justify-center items-center w-full h-full post-modal--container">
+              <div
+                class="post-modal--header border-b-[1.5px] border-zamella-grey-200 w-full text-center py-4">
+                <h2 class="heading-2">Share</h2>
+              </div>
+              <div class="w-full h-full flex flex-col justify-evenly gap-5 p-5">
+                <span class="body font-semibold text-zamella-black-100"
+                  >share to:</span
+                >
+                <div class="flex items-center justify-between">
+                  <div class="flex justify-center items-center flex-col gap-1">
+                    <img
+                      src="/assets/images/whatsapp.svg"
+                      alt=""
+                      class="w-10" />
+                    <span class="body-sm text-zamella-black-200">Whatsapp</span>
+                  </div>
+                  <div class="flex justify-center items-center flex-col gap-1">
+                    <img
+                      src="/assets/images/facebook (2).svg"
+                      alt=""
+                      class="w-10" />
+                    <span class="body-sm text-zamella-black-200">Facebook</span>
+                  </div>
+                  <div class="flex justify-center items-center flex-col gap-1">
+                    <img
+                      src="/assets/images/instagram (2).svg"
+                      alt=""
+                      class="w-10" />
+                    <span class="body-sm text-zamella-black-200"
+                      >Instagram</span
+                    >
+                  </div>
+                  <div class="flex justify-center items-center flex-col gap-1">
+                    <img
+                      src="/assets/images/x-twitter.svg"
+                      alt=""
+                      class="w-10" />
+                    <span class="body-sm text-zamella-black-200">X</span>
+                  </div>
+                </div>
+                <span class="body font-semibold text-zamella-black-100"
+                  >Share via link</span
+                >
+                <div
+                  class="flex justify-between mobilesm:flex-nowrap flex-wrap gap-y-2">
+                  <span
+                    class="w-fit 10/12 h-14 body text-zamella-black-100 bg-zamella-grey-50 rounded-sm p-5 flex items-center"
+                    >https://www.dafontfree.io/down</span
+                  >
+                  <div
+                    class="flex flex-col items-center justify-center cursor-pointer w-fit">
+                    <div
+                      class="w-12 h-12 rounded-sm bg-[#01A6FB26] flex items-center justify-center">
+                      <span
+                        class="fa fa-link text-zamella-black-200 flex flex-col justify-center items">
+                      </span>
+                    </div>
+                    <small class="link text-zamella-black-100">copy link</small>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

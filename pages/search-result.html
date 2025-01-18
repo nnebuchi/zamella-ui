@@ -18,44 +18,26 @@
     <header
       class="border-b-[1.5px] border-zamella-grey-200 fixed z-50 w-full h-40 flex items-center justify-center bg-zamella-white">
       <div
-        class="flex flex-col justify-between py-4 items-center h-full mobilesm:px-7 px-5 w-full">
+        class="flex flex-col justify-between py-4 items-center h-full mobilesm:px-5 w-full">
         <img
           src="/assets/images/zamella-logo.svg"
           alt="zamella-logo"
           class="w-20 self-start" />
         <div class="flex items-center justify-between w-full">
-          <div class="flex flex-col gap-2 items-center justify-center">
-            <span class="fa fa-home text-zamella-grey-200 text-[2rem]"></span>
-            <span class="body font-semibold text-zamella-grey-200"> Home </span>
+          <div
+            class="w-14 h-14 rounded-sm bg-[#01A6FB26] flex items-center justify-center">
+            <span class="fa fa-arrow-left-long text-zamella-black-200"></span>
           </div>
-          <div class="flex flex-col gap-2 items-center justify-center">
-            <img src="/assets/images/search.svg" alt="" class="w-10" />
-            <span class="body font-semibold text-zamella-grey-200">
-              Search
-            </span>
-          </div>
-          <div class="flex flex-col gap-2 items-center justify-center">
-            <img src="/assets/images/request.svg" alt="" class="w-10" />
-
-            <span class="body font-semibold text-zamella-grey-200">
-              Request
-            </span>
-          </div>
-          <div class="flex flex-col gap-2 items-center justify-center">
-            <img src="/assets/images/message.svg" alt="" class="w-10" />
-
-            <span class="body font-semibold text-zamella-grey-200">
-              Message
-            </span>
-          </div>
-          <div class="flex flex-col gap-2 items-center justify-center">
+          <div class="zamella-input--container mb-0 w-10/12">
+            <input
+              type="search"
+              name="search"
+              placeholder="search for a house..."
+              class="zamella-input h-[3.5rem] ring-1 ring-zamella-grey-200 ps-3" />
             <div
-              class="rounded-full ring-1 ring-zamella-primary w-10 h-10 flex items-center justify-center">
-              <img src="" alt="" />
-              <span
-                class="fa fa-user text-zamella-grey-200 text-[1.1rem]"></span>
+              class="w-16 h-full rounded-r-sm bg-zamella-primary ring-1 ring-zamella-black-100 flex items-center justify-center absolute right-0 top-0">
+              <img src="/assets/images/search-white.svg" class="w-9" alt="" />
             </div>
-            <span class="body font-semibold text-zamella-grey-200"> Me </span>
           </div>
         </div>
       </div>
@@ -63,25 +45,8 @@
     <main class="">
       <section class="border-b-[1.5px] border-zamella-grey-200">
         <div
-          class="flex justify-between items-center w-full mobile-sm:px-7 px-5 mx-auto pt-44">
-          <div class="zamella-input--container w-10/12">
-            <img
-              class="zamella-input--icon w-7 h-7"
-              src="/assets/images/post-icon.svg" />
-
-            <input
-              type="text"
-              placeholder="Post a house...."
-              name=""
-              class="zamella-input ring-1 ring-zamella-grey-100" />
-          </div>
-          <div class="flex flex-col items-center justify-center w-12 -mt-3">
-            <img
-              src="/assets/images/image-thumb.svg"
-              alt=""
-              class="w-full object-cover object-top" />
-            <span class="text-[#01A6FB80] font-semibold">Media</span>
-          </div>
+          class="flex justify-between items-center w-full mobile-sm:px-7 px-5 mx-auto pt-44 pb-3">
+          <h2 class="heading-2">Search Results(200)</h2>
         </div>
       </section>
       <section class="w-full mobile-sm:px-7 px-5 mx-auto pt-4">
