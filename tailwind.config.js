@@ -19,6 +19,7 @@ module.exports = {
     "./pages/chat.html",
     "./pages/profile.html",
     "./pages/share.html",
+    "./pages/desktop-signin.html",
     "./src/script.js",
   ],
   theme: {
