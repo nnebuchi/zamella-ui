@@ -54,7 +54,7 @@ module.exports = {
         "zamella-grey-25": "#B6B3B3",
         "zamella-grey-text": "#26292B80",
         "zamella-white": " #ffffff",
-        "zamella-error-200": " #BC0202",
+        "zamella-error-500": " #BC0202",
         "zamella-error-100": " #E30404",
       },
       fontFamily: {
