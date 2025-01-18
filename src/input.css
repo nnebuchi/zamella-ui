@@ -13,7 +13,7 @@
   --zamella-grey-25: #b6b3b3;
   --zamella-grey-text: #26292b80;
   --zamella-white: #ffffff;
-  --zamella-error-200: #bc0202;
+  --zamella-error-500: #bc0202;
   --zamella-error-100: #e30404;
 }
 @tailwind base;
