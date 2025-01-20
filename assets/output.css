@@ -13,7 +13,7 @@
   --zamella-grey-25: #b6b3b3;
   --zamella-grey-text: #26292b80;
   --zamella-white: #ffffff;
-  --zamella-error-200: #bc0202;
+  --zamella-error-500: #bc0202;
   --zamella-error-100: #e30404;
 }
 
@@ -1782,11 +1782,6 @@ video {
   color: rgb(38 41 43 / var(--tw-text-opacity, 1));
 }
 
-.text-zamella-error-200 {
-  --tw-text-opacity: 1;
-  color: rgb(188 2 2 / var(--tw-text-opacity, 1));
-}
-
 .text-zamella-grey-100 {
   color: #26292BBF;
 }
@@ -1906,7 +1901,17 @@ video {
   background-color: transparent;
 }
 
+.hover\:bg-zamella-primary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 166 251 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-zamella-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
