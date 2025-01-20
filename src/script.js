@@ -5,7 +5,11 @@ const overlay = document.querySelector(".overlay");
 const modal = document.querySelector(".success-modal");
 const dashboardBtn = document.querySelector("#dashboard-btn");
 
-eyeToggle.addEventListener("click", () => {
+const OtpInput = document.querySelectorAll(".zamella-input--OTP");
+
+console.log(OtpInput);
+
+eyeToggle?.addEventListener("click", () => {
   if (password.type === "password") {
     password.type = "text";
     eyeToggle.classList.remove("fa-eye");
@@ -17,7 +21,20 @@ eyeToggle.addEventListener("click", () => {
   }
 });
 
-dashboardBtn.addEventListener("click", () => {
+OtpInput.forEach((input) => {
+  input.addEventListener("input", (e) => {
+    if (input.value.length > 1) {
+      input.value = input.value[0];
+    }
+    if (input.value) {
+      input.classList.add("ring-2", "ring-zamella-primary");
+    } else {
+      input.classList.remove("ring-2", "ring-zamella-primary");
+    }
+  });
+});
+
+dashboardBtn?.addEventListener("click", () => {
   console.log(modal, overlay);
   // overlay.classList.add("hidden");
   // modal.classList.add("hidden");

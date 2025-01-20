@@ -928,6 +928,70 @@ video {
   }
 }
 
+.zamella-input--OTP {
+  display: flex;
+  height: 4rem;
+  width: 83.333333%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.6257rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 240 240 / var(--tw-bg-opacity, 1));
+  padding-inline-start: 1.25rem;
+  font-family: Proxima Nova, sans-serif;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(30 30 30 / var(--tw-text-opacity, 1));
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.zamella-input--OTP::-moz-placeholder {
+  font-family: Proxima Nova, sans-serif;
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: #26292BBF;
+  opacity: 0.9;
+}
+
+.zamella-input--OTP::placeholder {
+  font-family: Proxima Nova, sans-serif;
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: #26292BBF;
+  opacity: 0.9;
+}
+
+.zamella-input--OTP:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(1 166 251 / var(--tw-ring-opacity, 1));
+}
+
+@media (min-width: 375px) {
+  .zamella-input--OTP {
+    padding-inline-start: 1.75rem;
+  }
+
+  .zamella-input--OTP::-moz-placeholder {
+    font-size: 1.0625rem;
+  }
+
+  .zamella-input--OTP::placeholder {
+    font-size: 1.0625rem;
+  }
+}
+
+@media (min-width: 480px) {
+  .zamella-input--OTP {
+    width: 5rem;
+  }
+}
+
 .link {
   font-family: Manrope, serif;
   font-size: 0.93;
@@ -1320,10 +1384,6 @@ video {
   width: 8rem;
 }
 
-.w-4\/12 {
-  width: 33.333333%;
-}
-
 .w-5 {
   width: 1.25rem;
 }
@@ -1648,11 +1708,6 @@ video {
   padding-right: 1.25rem;
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1726,10 +1781,6 @@ video {
 
 .text-2xl {
   font-size: 1.25rem;
-}
-
-.text-3xl {
-  font-size: 1.375rem;
 }
 
 .text-\[0\.4rem\] {
@@ -1846,6 +1897,12 @@ video {
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
+.ring-2 {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
 .ring-\[\#01A6FB40\] {
   --tw-ring-color: #01A6FB40;
 }
@@ -1869,8 +1926,26 @@ video {
   --tw-ring-color: rgb(1 166 251 / var(--tw-ring-opacity, 1));
 }
 
+<<<<<<< HEAD
 .zamella-input::-webkit-meter-even-less-good-value {
   caret: none;
+=======
+.success-modal {
+  background-image: linear-gradient(
+    180deg,
+    #01a8fb25 10%,
+    var(--zamella-white) 40%
+  );
+  box-shadow: 0 0 8px 3px var(--zamella-grey-25);
+}
+
+.post-modal {
+  background-image: linear-gradient(
+    180deg,
+    #01a8fb25 10%,
+    var(--zamella-white) 20%
+  );
+>>>>>>> 678e1bd05318ddff9c8bfba130386d70806e3921
 }
 
 .placeholder\:font-manrope::-moz-placeholder {
@@ -1879,22 +1954,6 @@ video {
 
 .placeholder\:font-manrope::placeholder {
   font-family: Manrope, serif;
-}
-
-.placeholder\:text-3xl::-moz-placeholder {
-  font-size: 1.375rem;
-}
-
-.placeholder\:text-3xl::placeholder {
-  font-size: 1.375rem;
-}
-
-.placeholder\:font-bold::-moz-placeholder {
-  font-weight: 700;
-}
-
-.placeholder\:font-bold::placeholder {
-  font-weight: 700;
 }
 
 .hover\:bg-transparent:hover {
@@ -1928,19 +1987,8 @@ video {
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
-.focus\:ring-2:focus {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-}
-
 .focus\:ring-zamella-grey-100:focus {
   --tw-ring-color: #26292BBF;
-}
-
-.focus\:ring-zamella-primary:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(1 166 251 / var(--tw-ring-opacity, 1));
 }
 
 .active\:outline-none:active {
@@ -2001,10 +2049,6 @@ video {
 
   .mobilesm\:w-10\/12 {
     width: 83.333333%;
-  }
-
-  .mobilesm\:w-20 {
-    width: 5rem;
   }
 
   .mobilesm\:flex-nowrap {
