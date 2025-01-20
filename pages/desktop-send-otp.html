@@ -21,8 +21,10 @@
         <div class="onboarding-container--desktop">
           <div class="laptopmd:px-5 px-0">
             <div class="text-center">
-              <h1 class="heading-1">Welcome Back</h1>
-              <h2 class="subheading">You’ve been missed!</h2>
+              <h1 class="heading-1">Reset Password</h1>
+              <h2 class="subheading">
+                Please enter the phone number associated with this account.
+              </h2>
             </div>
             <form action="" class="my-5">
               <div class="zamella-input--container">
@@ -37,33 +39,9 @@
                   class="zamella-input" />
               </div>
 
-              <div class="zamella-input--container">
-                <span class="zamella-input--icon"
-                  ><i class="fa fa-lock"></i
-                ></span>
-                <input
-                  type="password"
-                  placeholder="Password"
-                  name="Password"
-                  value=""
-                  class="zamella-input"
-                  id="password" />
-                <span class="zamella-input--iconRight"
-                  ><i class="fa fa-eye" id="eyeToggle"> </i
-                ></span>
-              </div>
-              <div class="flex flex-col justify-center items-center gap-8">
-                <div
-                  class="flex mobilelg:flex-row flex-col justify-between mobilelg:items-center w-full">
-                  <h2 class="link">
-                    Not registered? <a href="" class="font-bold">Sign Up</a>
-                  </h2>
-                  <h2 class="link bold">
-                    <a href="" class="font-bold">Forgot Password?</a>
-                  </h2>
-                </div>
-                <button class="zamella-btn--primaryFull" type="submit">
-                  Sign In
+              <div class="flex flex-col justify-center items-end gap-8">
+                <button class="zamella-btn--primary" type="submit">
+                  Next <span class="fa fa-arrow-right-long"></span>
                 </button>
               </div>
             </form>
@@ -76,6 +54,32 @@
             src="/assets/images/zamella-logo-variant.svg"
             class="w-32"
             alt="zamella-logo" />
+        </div>
+        <div
+          class="overlay z-10 bg-opacity-80 bg-[#D9D9D9] h-full w-full inset-0 absolute"></div>
+        <div
+          class="success-modal rounded-lg fixed xl:inset-x-[26rem] laptopmd:inset-x-[22rem] lg:inset-x-[19rem] tabletlg:inset-x-[19rem] tabletmd:inset-x-52 mobilelg:inset-x-48 sm:inset-x-28 mobilemd:inset-x-24 inset-x-16 inset-y-62 tabletlg:w-5/12 tabletmd:w-6/12 mobilemd:w-8/12 h-80 bg-white z-20 flex items-center justify-center">
+          <div class="success-modal--container mobilesm:p-10 p-5">
+            <h2 class="heading-2 text-center text-zamella-primary">OTP</h2>
+            <p class="body text-center">
+              Zamella is about to send OTP to this phone number;
+              <span class="font-bold">09024576984</span>
+            </p>
+            <div class="flex items-center justify-between w-full gap-3">
+              <button
+                href="#"
+                class="zamella-btn--primaryFull bg-transparent ring-1 ring-zamella-primary text-zamella-primary hover:bg-zamella-primary-200 hover:ring-0 hover:text-white"
+                id="dashboard-btn">
+                Don't Send <span class="fa fa-cancel"></span>
+              </button>
+              <button
+                href="#"
+                class="zamella-btn--primaryFull"
+                id="dashboard-btn">
+                Send OTP <span class="fa fa-arrow-right-long"></span>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </main>

@@ -20,6 +20,12 @@ module.exports = {
     "./pages/profile.html",
     "./pages/share.html",
     "./pages/desktop-signin.html",
+    "./pages/desktop-signup.html",
+    "./pages/desktop-selfie-upload.html",
+    "./pages/desktop-selfie-upload-successful.html",
+    "./pages/desktop-send-otp.html",
+    "./pages/desktop-enter-otp.html",
+    "./pages/desktop-new-password.html",
     "./src/script.js",
   ],
   theme: {
