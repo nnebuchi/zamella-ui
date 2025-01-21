@@ -77,6 +77,60 @@
               </span>
             </div>
           </div>
+          <!-- modal -->
+          <div
+            class="overlay z-50 bg-opacity-80 bg-[#D9D9D9] h-1vh w-full inset-0 fixed"></div>
+          <div
+            class="rounded-lg fixed mobilesm:inset-x-10 mobilexs:inset-x-8 mobilexxs:inset-x-3 inset-x-0 inset-y-14 mobilexs:w-10/12 mobilexxs:w-80 w-full min-h-[500px] bg-white z-50 flex items-center justify-center post-modal">
+            <div
+              class="flex-col flex justify-center items-center w-full h-full post-modal--container">
+              <div
+                class="post-modal--header border-b-[1.5px] border-zamella-grey-200 w-full text-center py-4">
+                <h2 class="heading-2">Change Profile Picture</h2>
+              </div>
+              <form
+                action="
+              "
+                class="w-full h-full">
+                <div class="w-full h-full flex flex-col justify-evenly p-5">
+                  <span class="body text-zamella-black-200 font-bold mb-3">
+                    Choose an option
+                  </span>
+                  <label
+                    for="upload"
+                    class="h-40 rounded-sm bg-[#01A6FB1A] relative">
+                    <div
+                      class="flex flex-col items-center justify-center h-full w-full">
+                      <input
+                        type="file"
+                        name="upload"
+                        id="upload"
+                        class="opacity-0"
+                        hidden />
+                      <img
+                        src="/assets/images/upload.svg"
+                        alt=""
+                        class="w-4/12" />
+                      <span class="body text-center"
+                        >Tap to select photo from files</span
+                      >
+                    </div>
+                  </label>
+
+                  <button
+                    class="zamella-btn--primaryFull bg-transparent ring-zamella-primary ring-1 text-zamella-primary hover:text-white hover:ring-0">
+                    Take a shot <span class="fa fa-camera mt-1"></span>
+                  </button>
+                  <div class="flex flex-col gap-2 mt-5">
+                    <button class="zamella-btn--primaryFull">
+                      Update
+                      <span class="fa fa-long-arrow-right mt-1"></span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>

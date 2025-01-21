@@ -682,7 +682,8 @@ video {
   background-color: rgb(1 166 251 / var(--tw-bg-opacity, 1));
   padding: 0.5rem;
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
@@ -690,6 +691,12 @@ video {
 .zamella-btn--primary:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(8 116 171 / var(--tw-bg-opacity, 1));
+}
+
+@media (min-width: 345px) {
+  .zamella-btn--primary {
+    font-size: 1.25rem;
+  }
 }
 
 @media (min-width: 480px) {
@@ -1245,10 +1252,6 @@ video {
   margin-top: 2.5rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -1346,12 +1349,20 @@ video {
   min-height: 10rem;
 }
 
+.min-h-64 {
+  min-height: 16rem;
+}
+
 .min-h-80 {
   min-height: 20rem;
 }
 
 .min-h-\[500px\] {
   min-height: 500px;
+}
+
+.min-h-0 {
+  min-height: 0px;
 }
 
 .w-1\/3 {
@@ -1364,6 +1375,10 @@ video {
 
 .w-10\/12 {
   width: 83.333333%;
+}
+
+.w-11\/12 {
+  width: 91.666667%;
 }
 
 .w-12 {
@@ -1597,6 +1612,11 @@ video {
   border-bottom-width: 1.5px;
 }
 
+.border-red-800 {
+  --tw-border-opacity: 1;
+  border-color: rgb(153 27 27 / var(--tw-border-opacity, 1));
+}
+
 .border-zamella-grey-200 {
   --tw-border-opacity: 1;
   border-color: rgb(182 179 179 / var(--tw-border-opacity, 1));
@@ -1609,6 +1629,11 @@ video {
 
 .border-zamella-secondary-outline {
   border-color: #FF873233;
+}
+
+.border-red-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(127 29 29 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[\#01A6FB1A\] {
@@ -1638,6 +1663,11 @@ video {
 
 .bg-\[\#FF873233\] {
   background-color: #FF873233;
+}
+
+.bg-\[\#FFE0CA\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 224 202 / var(--tw-bg-opacity, 1));
 }
 
 .bg-transparent {
@@ -1789,12 +1819,12 @@ video {
   font-size: 1.25rem;
 }
 
-.text-3xl {
-  font-size: 1.375rem;
-}
-
 .text-\[0\.4rem\] {
   font-size: 0.4rem;
+}
+
+.text-\[0\.75rem\] {
+  font-size: 0.75rem;
 }
 
 .text-\[1\.1rem\] {
@@ -1803,6 +1833,10 @@ video {
 
 .text-\[1\.4rem\] {
   font-size: 1.4rem;
+}
+
+.text-\[1rem\] {
+  font-size: 1rem;
 }
 
 .text-\[2rem\] {
@@ -1948,22 +1982,6 @@ video {
   font-family: Manrope, serif;
 }
 
-.placeholder\:text-3xl::-moz-placeholder {
-  font-size: 1.375rem;
-}
-
-.placeholder\:text-3xl::placeholder {
-  font-size: 1.375rem;
-}
-
-.placeholder\:font-bold::-moz-placeholder {
-  font-weight: 700;
-}
-
-.placeholder\:font-bold::placeholder {
-  font-weight: 700;
-}
-
 .hover\:bg-transparent:hover {
   background-color: transparent;
 }
@@ -1971,6 +1989,10 @@ video {
 .hover\:bg-zamella-primary:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(1 166 251 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-zamella-secondary-100:hover {
+  background-color: #FFF2E933;
 }
 
 .hover\:text-white:hover {
@@ -1995,19 +2017,8 @@ video {
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
-.focus\:ring-2:focus {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-}
-
 .focus\:ring-zamella-grey-100:focus {
   --tw-ring-color: #26292BBF;
-}
-
-.focus\:ring-zamella-primary:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(1 166 251 / var(--tw-ring-opacity, 1));
 }
 
 .active\:outline-none:active {
@@ -2016,6 +2027,11 @@ video {
 }
 
 @media (min-width: 345px) {
+  .mobilexxs\:inset-x-2 {
+    left: 0.5rem;
+    right: 0.5rem;
+  }
+
   .mobilexxs\:inset-x-3 {
     left: 0.75rem;
     right: 0.75rem;
@@ -2046,6 +2062,11 @@ video {
     right: 2rem;
   }
 
+  .mobilexs\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .mobilexs\:w-10\/12 {
     width: 83.333333%;
   }
@@ -2068,10 +2089,6 @@ video {
 
   .mobilesm\:w-10\/12 {
     width: 83.333333%;
-  }
-
-  .mobilesm\:w-20 {
-    width: 5rem;
   }
 
   .mobilesm\:flex-nowrap {
