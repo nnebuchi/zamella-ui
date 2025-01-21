@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="/assets/fontawesome/js/all.min.js" />
+    <script src="/src/script.js" defer></script>
+    <title>Sign In</title>
+  </head>
+  <body>
+    <main class="flex items-center justify-center h-lvh">
+      <section
+        class="flex justify-between bg-zamella-white laptopmd:w-10/12 lg:w-11/12 tabletlg:w-11/12 w-full tabletlg:mx-auto tabletmd:mx-2 mx-0 tabletmd:ring-1 ring-zamella-grey-100 rounded-lg shadow-lg items-center py-5">
+        <div class="onboarding-container--desktop">
+          <div class="laptopmd:px-5 px-0">
+            <div class="text-center">
+              <h1 class="heading-1">Welcome Back</h1>
+              <h2 class="subheading">You’ve been missed!</h2>
+            </div>
+            <form action="" class="my-5">
+              <div class="zamella-input--container">
+                <span class="zamella-input--icon"
+                  ><i class="fa fa-phone"></i
+                ></span>
+                <input
+                  type="tel"
+                  placeholder="Phone"
+                  name="phone"
+                  value=""
+                  class="zamella-input" />
+              </div>
+
+              <div class="zamella-input--container">
+                <span class="zamella-input--icon"
+                  ><i class="fa fa-lock"></i
+                ></span>
+                <input
+                  type="password"
+                  placeholder="Password"
+                  name="Password"
+                  value=""
+                  class="zamella-input"
+                  id="password" />
+                <span class="zamella-input--iconRight"
+                  ><i class="fa fa-eye" id="eyeToggle"> </i
+                ></span>
+              </div>
+              <div class="flex flex-col justify-center items-center gap-8">
+                <div
+                  class="flex mobilelg:flex-row flex-col justify-between mobilelg:items-center w-full">
+                  <h2 class="link">
+                    Not registered? <a href="" class="font-bold">Sign Up</a>
+                  </h2>
+                  <h2 class="link bold">
+                    <a href="" class="font-bold">Forgot Password?</a>
+                  </h2>
+                </div>
+                <button class="zamella-btn--primaryFull" type="submit">
+                  Sign In
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div
+          class="onboarding-image"
+          style="background-image: url('/assets/images/onboard-img.png')">
+          <img
+            src="/assets/images/zamella-logo-variant.svg"
+            class="w-32"
+            alt="zamella-logo" />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

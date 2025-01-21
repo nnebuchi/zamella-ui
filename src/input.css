@@ -96,10 +96,13 @@
   @apply absolute inset-x-5 inset-y-4 text-zamella-grey-25 w-5 h-5 text-lg;
 }
 .zamella-input--iconRight {
-  @apply absolute mobilesm:inset-x-[22rem]  mobilexs:inset-x-[18rem] mobilexxs:inset-x-[16rem] inset-x-[15rem] inset-y-4 text-zamella-grey-100 w-5 h-5 text-lg;
+  @apply absolute xl:inset-x-[22rem] laptopmd:inset-x-[17rem] lg:inset-x-[19rem] tabletlg:inset-x-[18rem] tabletmd:inset-x-[18rem] sm:inset-x-[14rem] mobilelg:inset-x-[16rem] mobilesm:inset-x-[22rem]  mobilexs:inset-x-[18rem] mobilexxs:inset-x-[16rem] inset-x-[15rem] inset-y-4 text-zamella-grey-100 w-5 h-5 text-lg;
 }
 .zamella-input {
   @apply bg-zamella-grey-50 rounded-sm h-[4rem] w-full ps-16 pe-10  flex items-center justify-center text-xl text-zamella-grey-100 font-proxima placeholder:mobilexs:text-xl placeholder:text-sm placeholder:text-zamella-grey-100 placeholder:font-proxima placeholder:opacity-90 outline-none focus:ring-1 focus:ring-zamella-grey-100;
+}
+.zamella-input--OTP {
+  @apply focus:ring-1 focus:ring-zamella-primary sm:ps-7 mobilesm:w-20 w-10/12 mobilexs:ps-7 ps-5 flex items-center justify-center text-4xl font-bold placeholder:text-3xl placeholder:font-bold text-zamella-black-100 bg-zamella-grey-50 rounded-sm h-[4rem] font-proxima placeholder:mobilexs:text-xl placeholder:text-zamella-grey-100 placeholder:font-proxima placeholder:opacity-90 outline-none;
 }
 
 .link {
@@ -116,11 +119,6 @@
 
 @tailwind utilities;
 
-.onboarding-header {
-  /* background-image: url("/assets/images/transp-city.png"); */
-  /* background-color: #0874ab; */
-}
-
 .success-modal {
   background-image: linear-gradient(
     180deg,
@@ -130,16 +128,22 @@
   box-shadow: 0 0 8px 3px var(--zamella-grey-25);
 }
 
-.post-modal--header {
-}
-
-.post-modal--container {
-}
-
 .post-modal {
   background-image: linear-gradient(
     180deg,
     #01a8fb25 10%,
     var(--zamella-white) 20%
   );
+}
+/* DESKTOP DESIGN */
+.onboarding-container--desktop {
+  @apply bg-zamella-white  min-h-[400px]  tabletlg:px-7 sm:px-5 px-0  py-6 laptopmd:w-5/12 w-6/12;
+}
+
+.onboarding-image {
+  @apply w-6/12 bg-[url('/assets/images/transp-city.png')] bg-cover bg-bottom bg-no-repeat flex-col flex justify-between items-center tabletlg:mx-7 sm:mx-5 mx-0  rounded-lg h-[90vh] pt-4;
+}
+@tailwind utilities;
+.zamella-input::-webkit-meter-even-less-good-value {
+  caret: none;
 }

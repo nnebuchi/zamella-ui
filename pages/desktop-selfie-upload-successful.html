@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="/assets/fontawesome/js/all.min.js" />
+    <script src="/src/script.js" defer></script>
+    <title>Sign In</title>
+  </head>
+  <body>
+    <main class="flex items-center justify-center h-lvh">
+      <section
+        class="flex justify-between bg-zamella-white laptopmd:w-10/12 lg:w-11/12 tabletlg:w-11/12 w-full tabletlg:mx-auto tabletmd:mx-2 mx-0 tabletmd:ring-1 ring-zamella-grey-100 rounded-lg shadow-lg items-center py-5">
+        <div
+          class="overlay z-10 bg-opacity-80 bg-[#D9D9D9] h-full w-full inset-0 absolute"></div>
+        <div
+          class="success-modal rounded-lg fixed xl:inset-x-[26rem] laptopmd:inset-x-[22rem] lg:inset-x-[19rem] tabletlg:inset-x-[19rem] tabletmd:inset-x-52 mobilelg:inset-x-48 sm:inset-x-28 mobilemd:inset-x-24 inset-x-16 inset-y-62 tabletlg:w-5/12 tabletmd:w-6/12 mobilemd:w-8/12 h-80 bg-white z-20 flex items-center justify-center">
+          <div class="success-modal--container mobilesm:p-10 p-5">
+            <h2 class="heading-2">
+              Your account has been created successfully
+            </h2>
+            <div
+              class="success-modal--icon p-2 bg-[#01A6FB33] rounded-full h-20 w-20 flex items-center justify-center animate-pulse">
+              <span
+                class="bg-[#01A6FB66] h-full w-full rounded-full flex items-center justify-center p-2">
+                <span
+                  class="bg-zamella-primary h-full w-full rounded-full flex items-center justify-center p-4">
+                  <span
+                    class="fa fa-check text-zamella-white text-[2rem]"></span>
+                </span>
+              </span>
+            </div>
+            <a href="#" class="zamella-btn--primaryFull" id="dashboard-btn">
+              Continue to Dashboard <span class="fa fa-home"></span>
+            </a>
+          </div>
+        </div>
+        <div class="onboarding-container--desktop">
+          <div class="laptopmd:px-5 px-0">
+            <div class="text-center">
+              <h1 class="heading-1">Create an Account</h1>
+              <h2 class="subheading">Never be home stranded anymore!</h2>
+            </div>
+            <form
+              action="
+            ">
+              <div
+                class="flex items-center justify-center flex-col text-center mt-10 gap-8">
+                <div>
+                  <h1 class="heading-1 text-zamella-grey-text">
+                    Take a Selfie
+                  </h1>
+                  <h2 class="link">
+                    Make sure your face is in the circular frame
+                  </h2>
+                </div>
+                <div
+                  class="w-52 h-52 border-4 border-zamella-secondary-outline rounded-full flex items-center justify-center">
+                  <span
+                    class="fa fa-user text-[7rem] text-zamella-grey-200"></span>
+                </div>
+                <div class="flex w-full justify-between items-center gap-4">
+                  <button
+                    class="zamella-btn--primaryFull bg-transparent ring-1 ring-zamella-primary text-zamella-primary hover:bg-zamella-primary-200 hover:ring-0 hover:text-white"
+                    type="submit"
+                    disabled>
+                    Retake <span class="fa fa-repeat"></span>
+                  </button>
+                  <button
+                    class="zamella-btn--primaryFull"
+                    type="submit"
+                    disabled>
+                    Continue <span class="fa fa-arrow-right-long"></span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div
+          class="onboarding-image"
+          style="background-image: url('/assets/images/onboard-img.png')">
+          <img
+            src="/assets/images/zamella-logo-variant.svg"
+            class="w-32"
+            alt="zamella-logo" />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
