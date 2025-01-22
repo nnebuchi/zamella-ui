@@ -25,37 +25,58 @@
           class="w-20 self-start" />
         <div class="flex items-center justify-between w-full">
           <div class="flex flex-col gap-2 items-center justify-center">
-            <span class="fa fa-home text-zamella-grey-200 text-[2rem]"></span>
-            <span class="body font-semibold text-zamella-grey-200"> Home </span>
+            <img
+              src="/assets/images/home.svg"
+              alt=""
+              class="mobilexs:w-10 w-8" />
+            <span
+              class="mobilexs:text-lg text-sm body font-semibold text-zamella-grey-200">
+              Home
+            </span>
           </div>
           <div class="flex flex-col gap-2 items-center justify-center">
-            <img src="/assets/images/search.svg" alt="" class="w-10" />
-            <span class="body font-semibold text-zamella-grey-200">
+            <img
+              src="/assets/images/search.svg"
+              alt=""
+              class="mobilexs:w-10 w-7" />
+            <span
+              class="mobilexs:text-lg text-sm body font-semibold text-zamella-grey-200">
               Search
             </span>
           </div>
           <div class="flex flex-col gap-2 items-center justify-center">
-            <img src="/assets/images/request.svg" alt="" class="w-10" />
+            <img
+              src="/assets/images/request.svg"
+              alt=""
+              class="mobilexs:w-10 w-7" />
 
-            <span class="body font-semibold text-zamella-grey-200">
+            <span
+              class="mobilexs:text-lg text-sm body font-semibold text-zamella-grey-200">
               Request
             </span>
           </div>
           <div class="flex flex-col gap-2 items-center justify-center">
-            <img src="/assets/images/message.svg" alt="" class="w-10" />
+            <img
+              src="/assets/images/message.svg"
+              alt=""
+              class="mobilexs:w-10 w-7" />
 
-            <span class="body font-semibold text-zamella-grey-200">
+            <span
+              class="mobilexs:text-lg text-sm body font-semibold text-zamella-grey-200">
               Message
             </span>
           </div>
           <div class="flex flex-col gap-2 items-center justify-center">
             <div
-              class="rounded-full ring-1 ring-zamella-primary w-10 h-10 flex items-center justify-center">
-              <img src="" alt="" />
+              class="rounded-full ring-1 ring-zamella-primary mobilexs:w-10 mobilexs:h-10 h-7 w-7 flex items-center justify-center">
+              <img src="" alt="" class="w-ful h-full" />
               <span
                 class="fa fa-user text-zamella-grey-200 text-[1.1rem]"></span>
             </div>
-            <span class="body font-semibold text-zamella-grey-200"> Me </span>
+            <span
+              class="mobilexs:text-lg text-sm body font-semibold text-zamella-grey-200">
+              Me
+            </span>
           </div>
         </div>
       </div>
@@ -75,7 +96,9 @@
               name=""
               class="zamella-input ring-1 ring-zamella-grey-100" />
           </div>
-          <div class="flex flex-col items-center justify-center w-12 -mt-3">
+          <div
+            class="flex flex-col items-center justify-center w-10 -mt-3"
+            id="postTrigger">
             <img
               src="/assets/images/image-thumb.svg"
               alt=""
@@ -222,6 +245,48 @@
                   class="subheading font-semibold font-proxima text-zamella-grey-300">
                   Share
                 </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- modal -->
+          <div
+            class="overlay z-50 bg-opacity-80 bg-[#D9D9D9] h-1vh w-full inset-0 fixed hidden"></div>
+          <div
+            class="rounded-lg fixed mobilesm:inset-x-10 mobilexs:inset-x-8 mobilexxs:inset-x-3 inset-x-0 inset-y-14 mobilexs:w-10/12 mobilexxs:w-80 w-full h-[500px] bg-white z-50 hidden items-center justify-center post-modal"
+            id="postModal">
+            <div
+              class="flex-col flex justify-center items-center w-full h-full post-modal--container">
+              <div
+                class="post-modal--header border-b-[1.5px] border-zamella-grey-200 w-full text-center py-4">
+                <h2 class="heading-2">Post a House</h2>
+              </div>
+              <div class="w-full h-full flex flex-col justify-evenly p-5">
+                <span class="body text-zamella-black-200 font-bold mb-3">
+                  Upload Photos or Videos
+                </span>
+                <label
+                  for="upload"
+                  class="h-56 rounded-sm bg-[#01A6FB1A] relative">
+                  <div
+                    class="flex flex-col items-center justify-center h-full w-full">
+                    <input
+                      type="file"
+                      name="upload"
+                      id="upload"
+                      class="opacity-0"
+                      hidden />
+                    <img src="/assets/images/upload.svg" alt="" class="" />
+                    <span class="body text-center"
+                      >Tap to select photo from files</span
+                    >
+                  </div>
+                </label>
+                <div class="flex flex-col items-end mt-5">
+                  <button class="zamella-btn--primaryFull">
+                    Make Post <span class="fa fa-long-arrow-right mt-1"></span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>

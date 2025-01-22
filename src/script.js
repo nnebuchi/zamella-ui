@@ -4,8 +4,10 @@ const password = document.querySelector("#password");
 const overlay = document.querySelector(".overlay");
 const modal = document.querySelector(".success-modal");
 const dashboardBtn = document.querySelector("#dashboard-btn");
-
 const OtpInput = document.querySelectorAll(".zamella-input--OTP");
+const postModal = document.querySelector("#postModal");
+
+const postTrigger = document.querySelector("#postTrigger");
 
 console.log(OtpInput);
 
@@ -32,6 +34,21 @@ OtpInput.forEach((input) => {
       input.classList.remove("ring-2", "ring-zamella-primary");
     }
   });
+});
+
+postTrigger.addEventListener("click", () => {
+  if (
+    overlay.classList.contains("hidden") &&
+    postModal.classList.contains("hidden")
+  ) {
+    overlay.classList.remove("hidden");
+    postModal.classList.replace("hidden", "flex");
+  }
+});
+
+overlay.addEventListener("click", () => {
+  overlay.classList.add("hidden");
+  postModal.classList.add("hidden");
 });
 
 dashboardBtn?.addEventListener("click", () => {
