@@ -18,6 +18,8 @@ module.exports = {
     "./pages/search-result-empty.html",
     "./pages/chat.html",
     "./pages/profile.html",
+    "./pages/edit-profile-picture.html",
+    "./pages/edit-profile-name.html",
     "./pages/share.html",
     "./pages/desktop-signin.html",
     "./pages/desktop-signup.html",

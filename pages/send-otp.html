@@ -54,27 +54,29 @@
           </div>
         </div>
         <div
-          class="overlay z-10 bg-opacity-80 bg-[#D9D9D9] h-full w-full inset-0 absolute"></div>
+          class="overlay z-10 bg-opacity-80 bg-[#D9D9D9] h-1vh w-full inset-0 fixed"></div>
         <div
-          class="success-modal rounded-lg fixed xl:inset-x-[26rem] laptopmd:inset-x-[22rem] lg:inset-x-[19rem] tabletlg:inset-x-[19rem] tabletmd:inset-x-52 mobilelg:inset-x-48 sm:inset-x-28 mobilemd:inset-x-24 inset-x-16 inset-y-62 tabletlg:w-5/12 tabletmd:w-6/12 mobilemd:w-8/12 h-80 bg-white z-20 flex items-center justify-center">
+          class="success-modal rounded-lg fixed mobilesm:inset-x-10 mobilexs:inset-x-8 mobilexxs:inset-x-2 inset-y-40 mobilexs:w-10/12 w-11/12 h-80 bg-white z-20 flex items-center justify-center mobilexs:mx-0 mx-2">
           <div class="success-modal--container mobilesm:p-10 p-5">
-            <h2 class="heading-2">
-              Your account has been created successfully
-            </h2>
-            <div
-              class="success-modal--icon p-2 bg-[#01A6FB33] rounded-full h-20 w-20 flex items-center justify-center animate-pulse">
-              <span
-                class="bg-[#01A6FB66] h-full w-full rounded-full flex items-center justify-center p-2">
-                <span
-                  class="bg-zamella-primary h-full w-full rounded-full flex items-center justify-center p-4">
-                  <span
-                    class="fa fa-check text-zamella-white text-[2rem]"></span>
-                </span>
-              </span>
+            <h2 class="heading-2 text-center text-zamella-primary">OTP</h2>
+            <p class="body text-start">
+              Zamella is about to send OTP to this phone number;
+              <span class="font-bold">09024576984</span>
+            </p>
+            <div class="flex items-center justify-between w-full gap-3">
+              <button
+                href="#"
+                class="zamella-btn--primaryFull bg-transparent ring-1 ring-zamella-primary text-zamella-primary hover:bg-transparent"
+                id="dashboard-btn">
+                Don't Send
+              </button>
+              <button
+                href="#"
+                class="zamella-btn--primaryFull"
+                id="dashboard-btn">
+                Send OTP
+              </button>
             </div>
-            <a href="#" class="zamella-btn--primaryFull" id="dashboard-btn">
-              Continue to Dashboard <span class="fa fa-home"></span>
-            </a>
           </div>
         </div>
       </section>
