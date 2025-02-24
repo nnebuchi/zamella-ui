@@ -128,6 +128,14 @@
   box-shadow: 0 0 8px 3px var(--zamella-grey-25);
 }
 
+.error-bg {
+  background-image: url("/assets/images/error-bg.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 300px;
+}
+
 .post-modal {
   background-image: linear-gradient(
     180deg,

@@ -11,84 +11,43 @@
       rel="stylesheet" />
     <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="/assets/fontawesome/js/all.min.js" />
+    <link rel="stylesheet" href="/assets/output.css" />
     <script src="/src/script.js" defer></script>
-    <title>Sign Up</title>
+    <title>Page Not Found</title>
   </head>
   <body>
-    <main class="bg-zamella-primary">
-      <section class="">
-        <div class="onboarding-header">
-          <img
-            src="/assets/images/zamella-logo-variant.svg"
-            alt="zamella-logo"
-            class="w-1/3" />
-          <h1 class="onboarding-header--heading self-start">Sign Up</h1>
+    <main class="">
+      <section class="flex flex-col items-center justify-center p-5">
+        <div class="flex justify-center">
+          <a href="" class="w-full">
+            <img
+              src="/assets/images/zamella-logo-blue.png"
+              class="w-5/12 h-50 mx-auto"
+              alt="" />
+          </a>
         </div>
-        <div class="onboarding-container">
-          <div>
-            <div>
-              <h1 class="heading-1">Create an account</h1>
-              <h2 class="subheading">Never be home stranded anymore!</h2>
-            </div>
-            <form action="" class="my-5">
-              <div class="zamella-input--container">
-                <span class="zamella-input--icon"
-                  ><i class="fa fa-user-tag"></i
-                ></span>
-                <input
-                  type="text"
-                  placeholder="Full Name"
-                  name="fullname"
-                  value=""
-                  class="zamella-input" />
-              </div>
-              <div class="zamella-input--container">
-                <span class="zamella-input--icon"
-                  ><i class="fa fa-phone"></i
-                ></span>
-                <input
-                  type="tel"
-                  placeholder="Phone"
-                  name="phone"
-                  value=""
-                  class="zamella-input" />
-              </div>
-              <div class="zamella-input--container">
-                <span class="zamella-input--icon"
-                  ><i class="fa fa-envelope"></i
-                ></span>
-                <input
-                  type="email"
-                  placeholder="Email "
-                  name="email"
-                  value=""
-                  class="zamella-input" />
-              </div>
-              <div class="zamella-input--container">
-                <span class="zamella-input--icon"
-                  ><i class="fa fa-lock"></i
-                ></span>
-                <input
-                  type="password"
-                  placeholder="Password"
-                  name="Password"
-                  value=""
-                  class="zamella-input"
-                  id="password" />
-                <span class="zamella-input--iconRight"
-                  ><i class="fa fa-eye" id="eyeToggle"> </i
-                ></span>
-              </div>
-            </form>
-            <div class="flex flex-col justify-center items-end gap-3">
-              <h2 class="link">
-                Already registered? <a href="" class="font-bold">Sign In</a>
-              </h2>
-              <button class="zamella-btn--primary" type="submit">
-                Next <span class="fa fa-long-arrow-right mt-1"></span>
-              </button>
-            </div>
-          </div>
+        <div
+          class="space-y-5 mb-4 error-bg flex flex-col justify-center items-center">
+          <h1
+            class="text-4xl text-zamella-primary font-bold text-center font-proxima">
+            Oops! looks like you’re lost!
+          </h1>
+          <p
+            class="text-lg text-center text-[#26292BB2] font-manrope font-semibold">
+            The page you’re looking for doesn’t exist—maybe it was rented, just
+            like a hot property! 😉
+          </p>
+        </div>
+        <div class="w-10/12 space-y-4 text-center">
+          <span
+            class="text-base text-center font-manrope font-semibold text-[#26292BBF]"
+            >Try one of these instead:</span
+          >
+          <button class="zamella-btn--primaryFull">Go To Homepage</button>
+          <button
+            class="zamella-btn--primaryFull bg-transparent text-zamella-primary ring-1 ring-zamella-primary">
+            View Available Houses
+          </button>
         </div>
       </section>
     </main>
