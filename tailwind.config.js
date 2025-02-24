@@ -28,6 +28,7 @@ module.exports = {
     "./pages/desktop-send-otp.html",
     "./pages/desktop-enter-otp.html",
     "./pages/desktop-new-password.html",
+    "./pages/email-template.html",
     "./src/script.js",
   ],
   theme: {
