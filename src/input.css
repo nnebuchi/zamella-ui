@@ -19,6 +19,9 @@
 @tailwind base;
 
 @layer base {
+  * {
+    scroll-behavior: smooth;
+  }
   @font-face {
     font-family: "Proxima Nova";
     font-style: normal;
@@ -60,7 +63,6 @@
 .heading-1 {
   @apply text-3xl text-zamella-black-100 font-proxima font-semibold;
 }
-
 .heading-2 {
   @apply text-2xl text-zamella-black-100 font-proxima font-bold;
 }
@@ -117,7 +119,322 @@
   @apply flex flex-col items-center justify-center gap-8 text-center;
 }
 
+/* Landing page */
+.navlink {
+  @apply active:text-[#067AB6] text-[#26292BB2] text-base font-proxima font-medium hover:text-[#067AB6] hover:font-semibold;
+}
+
+.hero {
+  @apply bg-[url('/assets/images/hero-bg.png')] bg-cover bg-center bg-no-repeat  flex flex-col justify-center items-center h-[70vh];
+}
+
+.gradient-heading {
+  background: linear-gradient(
+    90deg,
+    #01a6fb 10%,
+    #2bb7ff,
+    #0874ab 40%,
+    #00273a
+  );
+  position: relative;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.gradient-heading::after {
+  content: "";
+  display: block;
+  width: 10px;
+  border-radius: 5px 5px 0 0;
+  height: 65%;
+  background-color: #ffa500;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+}
+
+.gradient-heading-2::after {
+  left: 22%;
+}
+.gradient-heading-3::after {
+  left: 24%;
+}
+
+.gradient-heading-4::after {
+  left: -5%;
+}
+
+.paragraph::after {
+  content: "";
+  width: 20px;
+  border-radius: 5px 0 0 5px;
+  height: 65px;
+  background-color: #ffa500;
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+}
+
+/* .mobilenav {
+  display: none;
+} */
+
+/* .mobilenav:not(.hidden) {
+  display: flex;
+} */
+
+.mobilenav {
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.mobilenav:not(.hidden) {
+  animation: slideDown 0.5s forwards;
+}
+
+.mobilenav.hidden {
+  animation: slideUp 0.5s forwards;
+  transition-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideDown {
+  0% {
+    top: -100vh;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -100vh;
+  }
+}
+
 @tailwind utilities;
+
+.card {
+  background: linear-gradient(180deg, #ffffff 75.5%, #c7ecff 100%);
+  border-radius: 1.5rem;
+}
+
+.card svg,
+.card svg rect {
+  fill: transparent;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.card svg rect {
+  stroke-width: 6;
+  transition: 3s;
+  stroke-dasharray: 300, 500;
+  stroke-dashoffset: 300;
+  stroke: #ffa500;
+  animation: animate 4s linear infinite;
+}
+.card:hover svg rect {
+  stroke-dasharray: 600, 200;
+  stroke-dashoffset: 100;
+  stroke: #2bb7ff;
+  animation: none;
+}
+
+.commission {
+  background-image: url("/assets/images/commission-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+@keyframes animate {
+  to {
+    stroke-dashoffset: 0;
+  }
+  0% {
+    stroke-dashoffset: 800;
+  }
+}
+
+.video-holder {
+  background: linear-gradient(180deg, #c7ecff 0%, #ffe0a6 100%);
+  width: 100%;
+  height: 400px;
+}
+
+.cta {
+  background: url("/assets/images/cta-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1200px) {
+  .card svg,
+  .card svg rect {
+    inset: 0 0 0 0;
+  }
+
+  .gradient-heading::after {
+    left: 28%;
+  }
+
+  .gradient-heading-2::after {
+    left: 19%;
+  }
+  .gradient-heading-3::after {
+    left: 27%;
+  }
+
+  .gradient-heading-4::after {
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .paragraph::after {
+    bottom: 10%;
+  }
+  .gradient-heading::after {
+    left: 23%;
+  }
+
+  .gradient-heading-2::after {
+    left: 13%;
+  }
+  .gradient-heading-3::after {
+    left: 23%;
+  }
+
+  .gradient-heading-4::after {
+    left: -3%;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .paragraph::after {
+    bottom: 10%;
+  }
+  .gradient-heading::after {
+    left: 19%;
+  }
+
+  .gradient-heading-2::after {
+    left: 15%;
+  }
+  .gradient-heading-3::after {
+    left: 18%;
+  }
+
+  .gradient-heading-4::after {
+    left: 12%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gradient-heading::after {
+    left: 12%;
+  }
+
+  .gradient-heading-2::after {
+    left: 11%;
+  }
+  .gradient-heading-3::after {
+    left: 13%;
+  }
+
+  .gradient-heading-4::after {
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .gradient-heading::after {
+    left: 5%;
+  }
+
+  .gradient-heading-2::after {
+    left: 4%;
+  }
+  .gradient-heading-3::after {
+    left: 7%;
+  }
+
+  .gradient-heading-4::after {
+    left: 0%;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .gradient-heading {
+    font-size: 1.7rem;
+  }
+  .gradient-heading::after {
+    left: 7%;
+  }
+
+  .gradient-heading-2::after {
+    left: 5%;
+  }
+  .gradient-heading-3::after {
+    left: 7%;
+  }
+
+  .gradient-heading-4::after {
+    left: 0%;
+  }
+}
+@media screen and (max-width: 567px) {
+  .gradient-heading::after {
+    left: 0%;
+  }
+
+  .gradient-heading-2::after {
+    left: -3%;
+  }
+  .gradient-heading-3::after {
+    left: 3%;
+  }
+
+  .gradient-heading-4::after {
+    left: 0%;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .gradient-heading {
+    font-size: 1.5rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .gradient-heading-3::after {
+    left: -2%;
+  }
+  .gradient-heading-4::after {
+    left: -2%;
+  }
+}
+/* Landing page ends  */
 
 .success-modal {
   background-image: linear-gradient(
@@ -127,7 +444,9 @@
   );
   box-shadow: 0 0 8px 3px var(--zamella-grey-25);
 }
-
+.zamella-input::-webkit-meter-even-less-good-value {
+  caret: none;
+}
 .error-bg {
   background-image: url("/assets/images/error-bg.svg");
   background-size: auto;
@@ -150,8 +469,4 @@
 
 .onboarding-image {
   @apply w-6/12 bg-[url('/assets/images/transp-city.png')] bg-cover bg-bottom bg-no-repeat flex-col flex justify-between items-center tabletlg:mx-7 sm:mx-5 mx-0  rounded-lg h-[90vh] pt-4;
-}
-@tailwind utilities;
-.zamella-input::-webkit-meter-even-less-good-value {
-  caret: none;
 }

@@ -7,6 +7,8 @@ const dashboardBtn = document.querySelector("#dashboard-btn");
 const OtpInput = document.querySelectorAll(".zamella-input--OTP");
 const postModal = document.querySelector("#postModal");
 
+const mobileTrigger = document.querySelector(".mobileNavToggle");
+
 const postTrigger = document.querySelector("#postTrigger");
 
 console.log(OtpInput);
@@ -36,7 +38,7 @@ OtpInput.forEach((input) => {
   });
 });
 
-postTrigger.addEventListener("click", () => {
+postTrigger?.addEventListener("click", () => {
   if (
     overlay.classList.contains("hidden") &&
     postModal.classList.contains("hidden")
@@ -46,7 +48,7 @@ postTrigger.addEventListener("click", () => {
   }
 });
 
-overlay.addEventListener("click", () => {
+overlay?.addEventListener("click", () => {
   overlay.classList.add("hidden");
   postModal.classList.add("hidden");
 });
@@ -56,3 +58,17 @@ dashboardBtn?.addEventListener("click", () => {
   // overlay.classList.add("hidden");
   // modal.classList.add("hidden");
 });
+
+document
+  .querySelector(".mobileNavToggle")
+  .addEventListener("click", function () {
+    document.querySelector(".mobilenav").classList.remove("hidden");
+    document.querySelector(".mobilenav").classList.add("flex");
+  });
+
+document
+  .querySelector(".mobileNavClose")
+  .addEventListener("click", function () {
+    document.querySelector(".mobilenav").classList.remove("flex");
+    document.querySelector(".mobilenav").classList.add("hidden");
+  });

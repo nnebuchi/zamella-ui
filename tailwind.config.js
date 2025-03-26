@@ -31,6 +31,7 @@ module.exports = {
     "./pages/switch-screen.html",
     "./pages/email-template.html",
     "./pages/404.html",
+    "./pages/landing.html",
     "./src/script.js",
   ],
   theme: {
