@@ -169,17 +169,6 @@
   left: -5%;
 }
 
-.paragraph::after {
-  content: "";
-  width: 20px;
-  border-radius: 5px 0 0 5px;
-  height: 65px;
-  background-color: #ffa500;
-  position: absolute;
-  bottom: 20%;
-  right: 10%;
-}
-
 /* .mobilenav {
   display: none;
 } */
@@ -312,9 +301,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .paragraph::after {
-    bottom: 10%;
-  }
   .gradient-heading::after {
     left: 23%;
   }
@@ -332,9 +318,6 @@
 }
 
 @media screen and (max-width: 880px) {
-  .paragraph::after {
-    bottom: 10%;
-  }
   .gradient-heading::after {
     left: 19%;
   }
